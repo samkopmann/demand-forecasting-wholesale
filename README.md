@@ -54,7 +54,7 @@ bindet ein besseres Prognosemodell weniger, ohne dass die Lieferfähigkeit leide
 | Schritt | Umsetzung |
 |---|---|
 | Daten | Rechnungspositionen → Nettomenge je Artikel und Woche. Stornos werden mit Bestellungen derselben Woche verrechnet. Porto, Gebühren und Korrekturbuchungen werden entfernt, ebenso die doppelt enthaltenen Tage 1.–9.12.2010 |
-| Artikelauswahl | Artikel mit Nachfrage in mindestens 70 % der Wochen **vor** dem Test (Schnell- und Mitteldreher). Neue Artikel und Sporadiker brauchen eigene Verfahren, siehe `spare-parts-forecasting` |
+| Artikelauswahl | Artikel mit Nachfrage in mindestens 70 % der Wochen **vor** dem Test (Schnell- und Mitteldreher). Neue Artikel und Sporadiker brauchen eigene Verfahren (z. B. Croston) |
 | Baselines | ① gleitender Durchschnitt 8 Wochen (Excel) ② exponentielle Glättung (ERP-Standard) ③ gleiche Wochen im Vorjahr × aktueller Trend |
 | Modell | Ein LightGBM über alle Artikel und Horizonte (1–3 Wochen), Tweedie-Verlust. Features: Lags, Mittelwerte, Anzahl Bestellpositionen, Vorjahresverlauf, Preis, Kalenderwoche. Alles relativ zum Artikelniveau. Nachtraining alle 4 Wochen |
 | Backtest | Rollierend: Jede Prognose sieht nur Daten bis zur jeweiligen Bestellentscheidung. Ein Test prüft das, indem er die Zukunft verändert und gleiche Features erwartet |
@@ -97,4 +97,4 @@ und Datum. Das Vorgehen lässt sich direkt übertragen. Der Vergleich findet auf
 Daten statt, gegen Ihr aktuelles Verfahren, bevor irgendetwas produktiv geht.
 
 ---
-Samuel Kopmann · [softwareandmore.de/forecasting](https://softwareandmore.de/forecasting)
+Dr. Samuel Kopmann · [softwareandmore.de/forecasting](https://softwareandmore.de/forecasting)
