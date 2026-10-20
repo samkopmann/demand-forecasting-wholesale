@@ -98,3 +98,6 @@ Daten statt, gegen Ihr aktuelles Verfahren, bevor irgendetwas produktiv geht.
 
 ---
 Dr. Samuel Kopmann · [softwareandmore.de/forecasting](https://softwareandmore.de/forecasting)
+
+© 2026 Dr. Samuel Kopmann. Alle Rechte vorbehalten. Der Code ist zum Ansehen und Nachrechnen der
+Ergebnisse veröffentlicht; für eine Nutzung in eigenen Projekten sprechen Sie mich gern an.
